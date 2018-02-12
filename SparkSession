@@ -14,3 +14,7 @@ val sparkSession = SparkSession.builder.
 
 -- Rading Json Data 
 val jsonData = spark.read.json(<path>)
+
+
+-- Running sql displaying DataFrame
+display(spark.sql("select * from Fresco"))
