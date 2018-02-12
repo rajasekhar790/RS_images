@@ -3,3 +3,10 @@ val sparkSession = SparkSession.builder.
   master("local")
   .appName("Sparksession")
   .getOrCreate()
+
+
+val sparkSession = SparkSession.builder.
+  master("local")
+  .appName("Spark Enabling hive support")
+  .enableHiveSupport()
+  .getOrCreate()
