@@ -1,5 +1,5 @@
 
 val sparkSession = SparkSession.builder.
   master("local")
-  .appName("Spark session in Fresco")
+  .appName("Sparksession")
   .getOrCreate()
