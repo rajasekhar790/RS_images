@@ -45,3 +45,6 @@ val df = spark.createDataFrame(List(("John", 35), ("Thomas", 30), ("Martin", 15)
 -- Creating DataFrame By loading Json
 val df = spark.read.json("examples/src/main/resources/data.json")
 
+-- To show DataFrame
+  df.show()
+
