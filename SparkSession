@@ -23,5 +23,5 @@ display(spark.sql("select * from Raj"))
 
 Spark configurations
 
-spark.conf.set("spark.fresco.config", "play")
-spark.conf.get("spark.fresco.config")
+spark.conf.set("spark.yy.config", "play")
+spark.conf.get("spark.yyy.config")
