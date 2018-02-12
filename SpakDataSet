@@ -9,4 +9,9 @@ Encoders are created for case classes. Call .toDS() on a sequence to convert the
     Dataset from RDD
      val ds=rdd.DS()
      ds.show()
+     
+     Dataset from DataFrame
+     val peopleDS = spark.read.json("examples/src/main/resources/data.json").as[Person]
+      peopleDS.show()
+     
     
