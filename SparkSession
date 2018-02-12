@@ -37,3 +37,11 @@ spark.table("sample_table").write.saveAsTable("sample_hive_table")
 val resultsHiveDF = spark.sql("SELECT name, rollno,totalmark,division FROM sample_hive_table WHERE totalmark > 40000")
 
 resultsHiveDF.show(10)
+ 
+-- By using List or Seq we can create dataFrame
+val df = spark.createDataFrame(List(("John", 35), ("Thomas", 30), ("Martin", 15)))
+
+
+-- Creating DataFrame By loading Json
+val df = spark.read.json("examples/src/main/resources/data.json")
+
