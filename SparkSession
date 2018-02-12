@@ -10,3 +10,7 @@ val sparkSession = SparkSession.builder.
   .appName("Spark Enabling hive support")
   .enableHiveSupport()
   .getOrCreate()
+
+
+-- Rading Json Data 
+val jsonData = spark.read.json(<path>)
