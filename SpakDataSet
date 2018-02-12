@@ -4,3 +4,9 @@ Encoders are created for case classes. Call .toDS() on a sequence to convert the
    val dsCaseClass = Seq(Person("John", 35)).toDS()
     dsCaseClass.show()
     
+    
+    
+    Dataset from RDD
+     val ds=rdd.DS()
+     ds.show()
+    
