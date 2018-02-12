@@ -62,6 +62,12 @@ df.createOrReplaceTempView("data")
 val sqlDF = spark.sql("SELECT * FROM data")
  sqlDF.show()
 
+val df =  spark.read.json("examples/src/main/resources/data.json")
+df.createGlobalTempView("data")
+val sqlDF = spark.sql("SELECT * FROM data")
+sqlDF.show()
 
 
+df.createOrReplaceTempView  is for that session it is not avilable outside
+df.createGlobalTempView   is avilable across the session.
 
