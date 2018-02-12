@@ -1,1 +1,6 @@
+Dataset uses a specialized Encoder to serialize the objects for processing or transmitting over the network.
+Encoders are created for case classes. Call .toDS() on a sequence to convert the sequence to a Dataset.
 
+   val dsCaseClass = Seq(Person("John", 35)).toDS()
+    dsCaseClass.show()
+    
