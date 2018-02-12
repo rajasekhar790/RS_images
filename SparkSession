@@ -18,3 +18,10 @@ val jsonData = spark.read.json(<path>)
 
 -- Running sql displaying DataFrame
 display(spark.sql("select * from Raj"))
+
+
+
+Spark configurations
+
+spark.conf.set("spark.fresco.config", "play")
+spark.conf.get("spark.fresco.config")
