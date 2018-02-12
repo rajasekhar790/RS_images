@@ -48,3 +48,20 @@ val df = spark.read.json("examples/src/main/resources/data.json")
 -- To show DataFrame
   df.show()
 
+
+DataFrame Filter  
+df.filter($"age" > 31).show()
+
+In  order to  use $ symbol  we need to import spark implicits ()
+import spark.implicits._
+
+
+dataframe has to be first registered as a temporary view.
+val df =  spark.read.json("examples/src/main/resources/data.json")
+df.createOrReplaceTempView("data")
+val sqlDF = spark.sql("SELECT * FROM data")
+ sqlDF.show()
+
+
+
+
